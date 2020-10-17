@@ -1,0 +1,15 @@
+DROP DATABASE IF EXISTS hblogo;
+
+CREATE DATABASE hblogo;
+
+USE hblogo;
+
+DROP TABLE IF EXISTS logos;
+
+CREATE TABLE logos (
+  id TINYINT(1) auto_increment,
+  logoURL VARCHAR(2000) IS NOT NULL,
+  PRIMARY KEY(id)
+);
+
+ALTER TABLE logos AUTO_INCREMENT = 1;
