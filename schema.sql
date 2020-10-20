@@ -8,7 +8,7 @@ DROP TABLE IF EXISTS logos;
 
 CREATE TABLE logos (
   id TINYINT(1) auto_increment,
-  logoURL VARCHAR(2000) IS NOT NULL,
+  logoURL VARCHAR(101),
   PRIMARY KEY(id)
 );
 
