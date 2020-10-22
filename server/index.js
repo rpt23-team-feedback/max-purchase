@@ -7,11 +7,11 @@ db.sync({
   force: false,
   logging: false
 })
-  .then(() => {
-    app.listen(port, () => {
-      console.log(`dockside at port ${port}`);
-    })
+.then(() => {
+  app.listen(port, () => {
+    console.log(`dockside at port ${port}`);
   })
-  .catch((err) => {
-    console.log('your error: ', err);
-  });
+})
+.catch((err) => {
+  console.log('your error: ', err);
+});

@@ -4,7 +4,7 @@
   "description": "to describe the purchase module",
   "main": "index.js",
   "scripts": {
-    "test": "jest --forceExit",
+    "test": "jest",
     "plough": "mysql -u root < schema.sql",
     "server-dev": "nodemon server/index.js",
     "seed": "npm run plough && node utils/seed.js",
