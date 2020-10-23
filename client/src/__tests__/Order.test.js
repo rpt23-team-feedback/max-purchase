@@ -19,6 +19,5 @@ describe('Order component', () => {
     const wrapper = mount(<Order match={ {'params' : { 'id': 12 } } } />);
     expect(wrapper.exists('.desc-data')).toEqual(true);
     expect(wrapper.find('.desc-data').text()).toEqual('the bundle name is Humble 12 Bundle and the minimum price is 1');
-  })
-})
-
+  });
+});
